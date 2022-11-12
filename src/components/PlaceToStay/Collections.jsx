@@ -86,7 +86,7 @@ const Collections = ({
               </div>
             </div>
           </div>
-          <div className="grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 px-6 sm:px-0 lg:px-6 gap-4">
+          <div className="grid xl:grid-cols-4 items-center  md:grid-cols-2 sm:grid-cols-1 px-6 sm:px-0 lg:px-6 gap-4">
             {listImage.map((listImages, index) => (
               <div className="flex">
                 <div className=" border-2 border-gray-500 rounded-2xl py-[16px] px-[16px]">

@@ -142,37 +142,6 @@ const Header = () => {
                             />
                           </div>
                         </div>
-                        {/* <div className="mt-2 text-center sm:ml-4 sm:text-left">
-                          <h4
-                            style={{ fontFamily: 'Red Rose' }}
-                            className="font-bold text-2xl"
-                          >
-                            Connect Wallet
-                          </h4>
-                          <div className='w-[100%] h-[1px] bg-black-600'></div>
-                          <p className="mt-2 text-[15px] leading-relaxed text-gray-500">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua.
-                          </p>
-                          <div className="items-center gap-2 mt-3 sm:flex">
-                            <button
-                              className="w-full mt-2 p-2.5 flex-1 text-white bg-red-600 rounded-md outline-none ring-offset-2 ring-red-600 focus:ring-2"
-                              onClick={() => setShowModal(false)}
-                            >
-                              Delete
-                            </button>
-                            <button
-                              className="w-full mt-2 p-2.5 flex-1 text-gray-800 rounded-md outline-none border ring-offset-2 ring-indigo-600 focus:ring-2"
-                              onClick={() => setShowModal(false)}
-                            >
-                              Cancel
-                            </button>
-                          </div>
-                        </div>
-                        <div className="flex items-center justify-center flex-none w-12 h-12 mx-auto  rounded-full">
-                          <img src="../../assets/Icon/x.svg" alt="x" />
-                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -184,7 +153,7 @@ const Header = () => {
       </header>
       {/* Mobile Navigation */}
 
-      <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t ">
+      <nav className="bg-white-500  fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t ">
         <div className="bg-white-500 sm:px-3">
           <ul className="flex w-full justify-between items-center text-black-500">
             <Link
