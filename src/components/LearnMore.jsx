@@ -33,10 +33,10 @@ const LearnMore = () => {
             Learn More
           </button>
         </div>
-        <div className=" row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
+        <div className="w-full row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
           <img
             src="../assets/learnmore_img.png"
-            className="max-w-none w-[600px] h-[500px]"
+            className="max-w-none lg:w-[600px] sm:mt-4 lg:h-[500px] w-[300px] h-[250px]"
             alt="learnmore"
           />
         </div>

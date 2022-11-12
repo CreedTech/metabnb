@@ -1,6 +1,4 @@
 import React from 'react';
-import ButtonPrimary from './misc/ButtonPrimary';
-import { motion } from 'framer-motion';
 
 const Hero = ({
   listUser = [
@@ -19,10 +17,10 @@ const Hero = ({
   ],
 }) => {
   return (
-    <div className={'max-w-screen mt-24 mx-auto'} id="about">
+    <div className={'max-w-screen xl:mt-24 mt-12 mx-auto'} id="about">
       <div className="xl:ml-44">
-        <motion.div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-4 mx-16 px-8 xl:px-16 py-6 sm:py-16 sm:mx-8">
-          <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
+        <div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 px-2 xl:px-16 py-6 sm:py-16">
+          <div className="flex flex-col justify-center items-start row-start-1 sm:row-start-1">
             <h1
               className="text-3xl lg:text-4xl xl:text-6xl font-medium text-black-400 leading-normal"
               style={{ fontFamily: 'Red Rose' }}
@@ -40,59 +38,48 @@ const Hero = ({
               metaverse, get a chance to turn your imagination to reality at
               your comfort zone
             </p>
-            <div className="form-control">
+            <div className="form-control w-full">
               <label className="input-group">
                 <input
                   type="text"
                   placeholder="Search for location"
-                  className="input  rounded-tl rounded-bl  border-[#A3A3A3] py-3 lg:py-4 px-12 lg:px-16"
+                  className="input  rounded-tl rounded-bl  border-[#A3A3A3] py-3 lg:py-4 px-4 lg:px-16"
                   style={{ border: '1px solid #A3A3A3' }}
                 />
-                <ButtonPrimary>Search</ButtonPrimary>
+                <button
+                  className={
+                    'py-3 lg:py-4 px-6 lg:px-16 text-white-500 font-semibold rounded-tr rounded-br bg-[#A02279] transition-all outline-none '
+                  }
+                >
+                  Search
+                </button>
               </label>
             </div>
           </div>
-          <div className="flex w-96 mx-32">
-            <motion.div className="h-full w-full mt-16 px-2">
-              {/* <Image
-                  src="/assets/Illustration1.png"
-                  alt="VPN Illustrasi"
-                  quality={100}
-                  width={612}
-                  height={383}
-                  layout="responsive"
-                /> */}
+          <div className="flex lg:w-96 sm:w-full xl:mx-32">
+            <div className="h-full w-full mt-16 px-2">
               <img
                 src="../assets/image3.png"
-                className="w-[612] py-2"
+                className="w-[612px]  py-2"
                 alt="Ill"
               />
-              <img src="../assets/image6.png" className="w-[612]" alt="Ill" />
-            </motion.div>
-            <motion.div className="h-full w-full ">
-              {/* <Image
-                  src="/assets/Illustration1.png"
-                  alt="VPN Illustrasi"
-                  quality={100}
-                  width={612}
-                  height={383}
-                  layout="responsive"
-                /> */}
-
+              <img src="../assets/image6.png" className="w-[612px]" alt="Ill" />
+            </div>
+            <div className="h-full w-full ">
               <img
                 src="../assets/image4.png"
-                className="w-[612] py-2"
+                className="w-[612px] py-2"
                 alt="Ill"
               />
-              <img src="../assets/image5.png" className="w-[612]" alt="Ill" />
-            </motion.div>
+              <img src="../assets/image5.png" className="w-[612px]" alt="Ill" />
+            </div>
           </div>
-        </motion.div>
+        </div>
       </div>
       <div className="relative w-full flex">
         <div className="w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 bg-[#A02279] z-10">
           {listUser.map((listUsers, index) => (
-            <motion.div
+            <div
               className="flex items-center justify-start sm:justify-center w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
               key={index}
               custom={{ duration: 2 + index }}
@@ -107,7 +94,7 @@ const Hero = ({
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
         <div
