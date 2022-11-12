@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route exact path="/" element={<Layout />} />
+        <Route exact path="/place-to-stay" element={<Layout />} />
       </Routes>
     </div>
   );
