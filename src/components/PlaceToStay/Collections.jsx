@@ -3,6 +3,18 @@ import React from 'react';
 const Collections = ({
     listImage = [
     {
+      image: "../assets/Frame155.png",
+    },
+    {
+      image: "../assets/Frame156.png",
+    },
+    {
+      image: "../assets/Frame157.png",
+    },
+    {
+      image: "../assets/Frame158.png",
+    },
+    {
       image: "../assets/Frame151.png",
     },
     {
@@ -15,16 +27,28 @@ const Collections = ({
       image: "../assets/Frame154.png",
     },
     {
-      image: "../assets/Frame155.png",
+      image: "../assets/Frame 161.png",
     },
     {
-      image: "../assets/Frame156.png",
+      image: "../assets/Frame 162.png",
     },
     {
-      image: "../assets/Frame157.png",
+      image: "../assets/Frame 159.png",
     },
     {
-      image: "../assets/Frame158.png",
+      image: "../assets/Frame 163.png",
+    },
+    {
+      image: "../assets/Frame 164.png",
+    },
+    {
+      image: "../assets/Frame 165.png",
+    },
+    {
+      image: "../assets/Frame 166.png",
+    },
+    {
+      image: "../assets/Frame 167.png",
     },
   ],}) => {
     
@@ -35,10 +59,25 @@ const Collections = ({
     >
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
-          <div className='mb-8'>
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed ">
-              Inspiration for your next adventure
-            </h1>
+          <div className='my-20 flex flex-row flex-wrap justify-between'>
+            <div className='flex flex-row flex-wrap gap-12 items-start'>
+              <p>Resturant</p>
+              <p>Cottage</p>
+              <p>Castle</p>
+              <p>fantast city</p>
+              <p>beach</p>
+              <p>Carbins</p>
+              <p>Off-grid</p>
+              <p>Farm</p>
+            </div>
+            <div className='flex flex-row justify-between gap-10 p-2' style={{ border: '1px solid #B4B4B4', borderRadius:"8px" }}>
+              <div>
+                <p>Location</p>
+              </div>
+              <div>
+                <img className='w-6 h-6' src='../../assets/Icon/vuesax/linear/setting-5.svg' alt='settings'/>
+              </div>
+            </div>
           </div>
                   <div className="grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 px-6 sm:px-0 lg:px-6 gap-4">
                   {listImage.map((listImages, index) => (
